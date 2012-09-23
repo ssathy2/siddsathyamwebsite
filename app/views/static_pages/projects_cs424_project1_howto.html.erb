@@ -1,0 +1,58 @@
+<div>
+  <h1> How to use the application </h1>
+  <div class="explanation_content_container">
+    <h2> Main Application View </h2> 
+    <div class="image_container">
+      <%= image_tag("fullscreen_512.png") %>
+    </div>
+    <div>
+      <p>
+        The main body of the application contains a single graph or table(explained later on) which displays data for a single country or region. The data can be viewed independently or relatively to the world data for the current dataset. The slider underneath the X-Axis of the graph allows the user to adjust the range of years for which data can be viewed for. The slider also allows the user to pick a certain difference of years and see the graph scroll with the slider. Upon startup, the total primary energy consumption for North America between 1980 and 2009 is shown in graphical form.
+      </p>
+    </div>  
+  </div>
+  <div class="explanation_content_container">
+    <h2> Graph View </h2>
+    <div class="image_container">
+       <%= image_tag("graph_world.png") %>
+    </div>
+    <div> 
+      <p>
+        This is the main graph view. The yellow line represents the country or region for which the user wants to see data for. The blue line represents data for the world. The labels on top of the Y-Axis and underneath the X-Axis represent the units for the axes. The title of the graph denotes which data set the user is looking at and for which places the data is for.
+      </p>
+    </div>
+  </div>
+  <div class="explanation_content_container">
+    <h2> Side Controls </h2>
+    <div class="image_container">
+      <%= image_tag("sidenav.png") %>
+    </div>
+    <div>
+      <p>
+        This is the side bar of the application. It is the primary point for changing countries or regions, viewing data in tabular or graphical form, toggling displaying world data, showing help and credits, and changing datasets.
+      </p>
+      <p>
+        The user selects a country or region by typing it in the textbox at the top of the sidebar. The list beneath then filters based on the text in the textbox and the user can then pick the place that he or she would like to see data for. If the user types in a region, then the list beneath will be populated with all of the countries in that region. 
+      </p>
+      <p>
+        The second list box contains the six datasets that the user can view. The current dataset that the user is looking at is highlighted in a light-blue color. The user has to simply click on the dataset that he or she would like to view. The user has the option of viewing any combination of datasets and places.
+      </p>
+      <p>
+        The graph/table buttons allow the user to toggle back and forth between seeing the data in tabular form and in graphical form. These modes can be enabled for any dataset and for any country or region. The 'Show World Data' toggle button allows the user to toggle back and forth between showing the data for the world compared to the place that is currently being displayed on the table or graph. 
+      </p>
+    </div>
+  </div>
+  
+  <div class="explanation_content_container">
+    <h2> Table View </h2>
+      <div class="image_container">
+        <%= image_tag("table_world.png") %>
+      </div>
+      <div>
+        <p>
+          The final feature of the application is the tabular view. This allows users to see data for the place he or she is looking at and also has the option of looking at data for both the current place and the the world data. By default, the table shows all the years availiable for the dataset that the user is looking at. The colors of the data values are the same as they are on the graph so it is easy to distinguish the data apart. The title denotes the dataset which the user is looking at as well as the units of the dataset.
+        </p>
+      </div>
+  </div>
+
+</div>

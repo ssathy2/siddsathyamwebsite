@@ -1,0 +1,33 @@
+<div>
+  <h1> Downloading and running application </h1>
+  <div class="exp_container">
+    <h2> Download Links for Stand Alone Application </h2>
+    <dl class="dl-horizontal">
+      <dt> <h3>Mac OSX</h3> </dt>
+      <dd> <%=link_to"64-Bit","https://github.com/downloads/ssathy2/CS424Project1/application.macosx.zip"%> </dd>
+      
+      <dt> <h3>Windows</h3> </dt>
+      <dd> <%=link_to"64-Bit", "https://github.com/downloads/ssathy2/CS424Project1/application.windows64.zip" %>, <%=link_to"32-Bit", "https://github.com/downloads/ssathy2/CS424Project1/application.windows32.zip" %>
+      </dd>
+      
+      <dt> <h3>Linux</h3> </dt>
+      <dd> 
+      <%=link_to"64-Bit", "https://github.com/downloads/ssathy2/CS424Project1/application.linux64.zip" %>, <%=link_to"32-Bit", "https://github.com/downloads/ssathy2/CS424Project1/application.linux32.zip" %>
+      </dd>
+    </dl>
+  </div>
+  <div class = "exp_container">
+    <h2>Source Code Download Link</h2>
+    <dd> <%= link_to "Click here to download source (Zip File)",  "https://github.com/ssathy2/CS424Project1/zipball/master" %></dd>
+    <h2> To Run From Source </h2>
+      <ol>
+      <li> Download source code from link above, unzip to a folder on computer.</li>
+      <li> Download Processing version 2.0a8 from <%= link_to "here", "http://code.google.com/p/processing/downloads/list"%> that is suitable for your machine.</li>
+      <li> Unzip Processing to a folder on your computer</li>
+      <li> Download controlP5 library from <%= link_to "here", "http://code.google.com/p/controlp5/downloads/detail?name=controlP5-1.5.1.zip"%>.</li>
+      <li> Unzip controlP5 library and place extracted folder into "Libraries" folder of Processing sketches.</li>
+      <li> Run Processing IDE from within folder in step 3 and open "CS424Project1.pde" within folder from step 1.</li>
+      <li> Click Play button in Processing IDE to run application.</li>
+    </ol>
+  </div>
+</div>

@@ -3,6 +3,14 @@ SampleApp::Application.routes.draw do
   
   match '/about', to:"static_pages#about"
   match '/contact', to:"static_pages#contact"
+  match '/projects', to:"static_pages#projects"
+  match '/projects/cs424', to:"static_pages#projects_cs424"
+  match '/projects/cs424/project1', to:"static_pages#projects_cs424_project1"
+  match '/projects/cs424/project1/howto', to:"static_pages#projects_cs424_project1_howto"
+  match '/projects/cs424/project1/data', to:"static_pages#projects_cs424_project1_data"
+  match '/projects/cs424/project1/source', to:"static_pages#projects_cs424_project1_source"
+  match '/projects/cs424/project1/conclusions', to:"static_pages#projects_cs424_project1_conclusions"
+
   #match '/signin', to:"static_pages#sign-in"
   #match '/email-me', to:"static_pages#email-me"
 

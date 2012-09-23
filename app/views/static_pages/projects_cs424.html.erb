@@ -1,0 +1,10 @@
+<% provide(:title, 'CS 424') %>
+<div class="contact-container">
+  <h1> CS 424 </h1>
+  <div>
+        <div>
+          <h2><%=link_to "Project 1: Electric Avenue", projects_cs424_project1_path%></h2>
+          <%= link_to(image_tag("cs424proj1cover.png", {:alt => 'example'}), {:controller => 'static_pages', :action => 'projects_cs424_project1' }) %>
+       </div> 
+  </div>
+</div>

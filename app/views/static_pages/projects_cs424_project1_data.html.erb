@@ -1,0 +1,17 @@
+<div class="exp_container">
+  <h1> Data </h1>
+  <div class="explanation_content_container">
+    <h2> Source</h2>
+    <p> The data comes from the <%=link_to "US Energy Information Administration", "http://www.eia.gov/cfapps/ipdbproject/IEDIndex3.cfm"%>. From there, the datasets that I was most interested at looking at were availiable as .csv (comma separated values) files and so I downloaded all six data sets and proceeded to include them in my application</p>
+  </div>
+  <div class="explanation_content_container">
+    <h2> Processing </h2>
+    <p> It took some thinking to figure out the best way to integrate the datasets into my application. I wanted to come up with a structure that would be resusable, easy to use in the code, and fast to to do operations on. Luckily, the FloatTable example from the Milk, Tea, Coffee processing example satisfied these three criteria and so I used a modifed version of that table in my code.</p>
+  </div>
+  <div class="explanation_content_container">
+    <h2> Display</h2>
+    <p> The hardest portion of this project was how to display all the data that was availiable. I wanted to avoid showing too much data at once as I wanted to follow what Schneiderman said, "Overview first, zoom and filter, details on demand". I ended up with a solution that only showed a maximum of two places at one time but still allowed the user to pick any dataset they'd like to look at as well as giving the user a set of options that gives the user details on demand.
+    </p>
+  </div>
+  
+</div>
