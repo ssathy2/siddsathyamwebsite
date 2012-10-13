@@ -22,4 +22,16 @@ class Cs424Controller < ApplicationController
   
   def project2_status
   end
+  
+  def project2_howto
+  end
+  
+  def project2_data
+  end
+  
+  def project2_source
+  end
+  
+  def project2_conclusions
+  end
 end

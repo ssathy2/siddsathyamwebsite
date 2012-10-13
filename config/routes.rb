@@ -12,7 +12,10 @@ SampleApp::Application.routes.draw do
   match '/projects/cs424/project1/conclusions', to:"cs424#project1_conclusions"
   match '/projects/cs424/project2', to:"cs424#project2"
   match '/projects/cs424/project2/status', to:"cs424#project2_status"
-
+  match '/projects/cs424/project2/howto', to:"cs424#project2_howto"
+  match '/projects/cs424/project2/data', to:"cs424#project2_data"
+  match '/projects/cs424/project2/source', to:"cs424#project2_source"
+  match '/projects/cs424/project2/conclusions', to:"cs424#project2_conclusions"
 
 
   #match '/signin', to:"static_pages#sign-in"
