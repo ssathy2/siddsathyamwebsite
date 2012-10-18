@@ -1,3 +1,13 @@
-<div>
-  fsf
+<div class="exp_container">
+  <h1> Data </h1>
+  <div class="explanation_content_container">
+    <h2> Source</h2>
+    <p> The raw data was obtained from <%= link_to "here", "http://www.imdb.com/interfaces#plain"%>.It was available in *.list files (* being movies,genres,keywords,ratings,certificates,etc.)</p>
+  </div>
+  <div class="explanation_content_container">
+    <h2> Processing </h2>
+    <p> It was not feasible to use the files in AS-IS form. It had to be cleaned and parsed for relevant data. All the information in the files are available in the format : MOVIE delimiter SOMEINFOPlus the chalenge was dealing with huge data. So files were broken into alphabetical order to manage cleaning,parsing and debugging. All files required their own parsing techniques to extract relevant data. All the movie titles were replaced with an ID(manually assigned in movies file) so that it is easier to store and retrieve. Then all the consolidated data is moved onto MYSql for querying complex pieces of information.</p>
+  </div>
+  
+  
 </div>
