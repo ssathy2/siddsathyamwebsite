@@ -2,15 +2,19 @@
 <div class="contact-container">
   <h1> CS 424 </h1>
   <div>
-        <div>
+        <div class="project_listing">
           <h2><%=link_to "Project 1: Electric Avenue",  {:controller => 'cs424', :action => 'project1' }%></h2>
           <%= link_to(image_tag("cs424proj1cover.png", {:alt => 'example'}), {:controller => 'cs424', :action => 'project1' }) %>
        </div>
        <div class="project_listing">
           <h2>
             <%=link_to "Project 2: Monster Mash",  {:controller => 'cs424', :action => 'project2' }%>
-            <%= link_to(image_tag("Sidd's Phone_000179.jpg", {:alt => 'example'}), {:controller => 'cs424', :action => 'project2' }) %>
-          </h2>     
+          </h2>
+          <%= link_to(image_tag("Sidd's Phone_000179.jpg", {:alt => 'example'}), {:controller => 'cs424', :action => 'project2' }) %>
+       </div>
+       <div class="project_listing">
+          <h2><%=link_to "Project 3: Objects in the Rear View Mirror",  {:controller => 'cs424', :action => 'project3' }%></h2>
+
        </div>
   </div>
 </div>
