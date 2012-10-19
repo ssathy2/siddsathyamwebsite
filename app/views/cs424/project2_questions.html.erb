@@ -1,0 +1,52 @@
+<div>
+  <h1> Questions and Answers </h1>
+  <div>
+    <h3> Team 1 </h3>
+    <p>Q: Was there a reason your group did not implement a scaling Y-axis as the X-axis scales? </p>
+    <p>A: The scaling Y-Axis never came up in our discussions while we were planning our application. We also feel that this feature wouldn't help us to answer the questions outlined in the project 2 specifications on the CS 424 website. </p>
+  </div>
+  <div>
+    <h3> Team 2 </h3>
+    <p>Q: Why did you implement the search and information box? It displayed just the name of the movie, year and two keywords. The name and year are already listed in the listbox.</p>
+    <p>A: By showing all keywords, we kind of show what are the things, happening in the movie. The number of keywords are related to the movie. For the highlighted movie, the database had just two keywords attached to it to show. We had it designed to incorporate other parameters as well.</p>
+  </div>
+  <div>
+    <h3> Team 3 </h3>
+    <p>Q: What steps did you perform to clean the data and how does your application make use of that data?</p>
+    <p>A: We made a parser in java to clean the data and created MYSQL tables to store files. We cache general data at the start of the program. We cache complex queries in the program as and when it is queried, so the performance increases for most queried data. Also look at our data page <%=link_to "here", {:controller => 'cs424', :action => 'project2_questions' }%> to get more information about the data processing.
+    </p>
+  </div>
+  <div>
+    <h3> Team 4 </h3>
+    <p>Q: How can you filter by format?</p>
+    <p>A: We cannot filter by format in our application. We weren't able to incorporate format data into our database.</p>
+  </div>
+  <div>
+    <h3> Team 5 </h3>
+    <p>Q: How do you search for a movie? Is the autocomplete just for countries or does it work for genre, budget and other filters?
+    </p>
+    <p>A: You can search for a movie by searching by movie name in the box underneath the text "Movies". The auto complete was only implemented for movies and countries. We grouped the keywords so that they fit on the screen and weren't overly cluttered.</p>
+  </div>
+  <div>
+    <h3> Team 6 </h3>
+    <p>Q: Can you describe a bit about the data processing done?</p>
+    <p>A: We parsed and cleaned .list files available from IMDB to cleaner files and imported it to MYSQL. We query most data and cache it in our program at the start of the application and query some specific or complex data as and when required.</p>
+  </div>
+  <div>
+    <h3> Team 7 </h3>
+    <p>Q: Why is the primary focus around the countries?</p>
+    <p>A: From the get go we gravitated towards focusing our data exploration around countries. It just so happened that analyzing variations in film trends by country of origin/history of the region interested us the most.
+    </p>
+  </div>
+  <div>
+    <h3> Team 8 </h3>
+    <p>Q: Besides the wars, did you find some other events affecting USA number/quality of movies?</p>
+    <p>A: We also found that Gulf countries have very less number of movies, the reason being, the theatres are banned in many rural areas and in urban areas many of the films are banned.</p>
+  </div>
+  <div>
+    <h3> Team 10 </h3>
+    <p>Q: Why so little data about each movie in display?</p>
+    <p>A: We had difficulty parsing the data for certification, budget, etc. Due to this, we weren't able to include this data for each movie in the database and inturn that data wasn't included in the application.</p>
+  </div>
+  
+</div>
