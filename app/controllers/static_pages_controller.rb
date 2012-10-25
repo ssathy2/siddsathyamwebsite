@@ -10,7 +10,4 @@ class StaticPagesController < ApplicationController
   
   def projects
   end
-  
-  def engl120
-  end
 end
