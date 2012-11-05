@@ -1,14 +1,34 @@
 <div>
   <h1> Project 3: Objects in the Rear View Mirror </h1>
-  <h2> Created By: Galen Thomas-Ramos, Pavle Jovanovic, Sidd Sathyam</h2>
+  <h2> Created By: Galen Thomas-Ramos, <%= link_to "Pavle Jovanovic", 'http://superjova.com/'%>, Sidd Sathyam</h2>
   <h2> Welcome to Project 3! In this project we are interested in looking at causes, patterns, trends, and interesting features in highway deaths in the United States.</h2>
-  <h3> More to come here...Check back later!</h3>
-    <div class="exp_container">
+  <div class="movie_container">
+    <h2> Video Walkthrough of Application </h2>
+    <div class="youtube_video">
+      <iframe width="560" height="315" src="http://www.youtube.com/embed/uAYXhwfqPNU" frameborder="0" allowfullscreen>      </iframe>
+      </div>
+  </div>
+  <div class="exp_container">
       <h2 id="projectlinks_header"> Project Links</h2>
       <ul>
         <li>
           <%=link_to "Status", {:controller => 'cs424', :action => 'project3_status' }%>   
-        </li>        
+        </li>
+        <li>
+          <%=link_to "Application Walkthrough", {:controller => 'cs424', :action => 'project3_howto'} %>
+        </li>
+        <li>
+          <%=link_to "Data overview", {:controller => 'cs424', :action => 'project3_data'} %>
+        </li>
+        <li>
+          <%=link_to "Link to source code", {:controller => 'cs424', :action => 'project3_source'} %>
+        </li>
+        <li>
+          <%=link_to "Team Member Roles", {:controller => 'cs424', :action => 'project3_roles'} %>
+        </li>
+        <li>
+          <%=link_to "Conclusions", {:controller => 'cs424', :action => 'project3_conclusions'} %>
+        </li>
       </ul>
   </div>
 </div>

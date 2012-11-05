@@ -1,0 +1,40 @@
+<div class="exp_container">
+  <h1> Data </h1>
+  <div class="explanation_content_container">
+    <h2> Source</h2>
+    <p> The raw data was obtained from <%= link_to "here", "http://www-fars.nhtsa.dot.gov//QueryTool/QuerySection/SelectYear.aspx"%>. We then selected the filters like age, sex, drug test results, vehicle body type, weather conditions, etc. for every year between 2001 and 2010. Here's how the filter selection looked like for 2004 for example. </p>
+    <div class="image_container">
+      <%= image_tag("filter_website.png") %>
+    </div>
+    <p> After that, we hit the case listing button and chose to view the data with all the filters selected except for the case number. After that, the data gets displayed on the website with rows and columns and the corresponding values. The screen shot below displays what that looks like. </p>
+    <div class="image_container">
+      <%= image_tag("columnrows_website.png") %>
+    </div>
+    <p> We went through this process for years 2001 - 2010 and ended up with 10 excel spreadsheets with the data that we needed. </p>
+  </div>
+  <div class="explanation_content_container">
+    <h2> Processing </h2>
+    <p> Next, I imported all the data from each of the excel spread sheets into a database table called cases. The result is a table in the database called cases, the result is below. </p>
+    <div class="image_container">
+      <%= image_tag("cases_view.png") %>
+    </div>
+    
+    <p> From there, I created 50 tables for each of the states and then selected the data from the cases table and inserted it into each of the state tables based on the istatenum column in the cases table. The conversion from istatenum to the actual state name is shown: </p>
+   <div class="image_container">
+      <%= image_tag("statenum_conversion.png") %>
+    </div>
+    <p> The result is 50 tables named after the 50 states with the data for each individual state. This makes it easier and faster to access the data for our application. We did this because we're only looking at data at the state level and not any other levels.</p>   
+  </div>
+  <div class="explanation_content_container">
+    <h2> Accessing </h2>
+    <div class="image_container">
+      <%= image_tag("databrowser_picture.png") %>
+    </div>
+     <p> This is the data browser class. It's got methods for accessing the database and getting data back. The key to this class is the generate query method. This method takes in the filters that we have selected in our application and based on those filters, it generates a query to run on the database. The other methods return hashmaps of various times or data fields mapped to the number of crashes or another fields. </p>
+     
+     <p> The integers in the database for each of the fields also had to be converted to string values. We queried the database by first converting the string filters into integers which the filters were stored in the database under. Then we queried the database using the numbers and got results back. The conversion was done by hard coding hashmaps that mapped string values of the factors to their corresponding integer values in the database. The conversions were found on the same data website where the istatenum conversion table was found. 
+    
+     <p> We also defined some helper classes like a point class, a crash class, and a date class to store the data associated with the crashes in those structures. This makes the data more manageable and easier to work with. The crash class contains all the information availiable in the database for the crash, the point class contains a latitude and longitude that corresponds to geographically where the crash occurred and the data class contains what time, what day, what year, and what month the crash occurred in. </p>
+  </div>
+  
+</div>
