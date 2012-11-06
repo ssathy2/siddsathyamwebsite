@@ -1,0 +1,189 @@
+<div class="container">
+      			<div>
+  				<h1>Walkthrough</h1>
+  				<div class="explanation_content_container">
+    					<h2>Front Page</h2>
+    					<p>Welcome to the program! We can assume you have an interest for automobile related accidents in the United States and we 
+					are really excited to show you.  Below you can see the first screen on your long journey on the quest for knowledge.<br/>
+
+					The first page that the user sees gives them the overview of Illinois from 2001 to 2010.  The user can take a moment to analyze 
+					what they see or if they are a more experienced user, they can get deeper into the data.
+					</p>
+    					<div class="image_container">
+      						<%= image_tag("front.jpg") %>
+                        </div>
+  				</div>
+				<hr/>
+				<div class="explanation_content_container">
+    					<h2>Changing State</h2>
+					<p>
+					There are 50 states in the United States of America and all of them contain their own accident data. We have also tossed in 
+					District of Columbia for no additional cost. That gives the user 51 locations that they can compare.
+					</br>
+					To change a state in this screen simply click the current state and select the new state from the drop down the pops up.
+					</p>
+    					<div class="image_container">
+                          <%= image_tag("selectstate.jpg") %>
+      					</div>
+					<div class="image_container">
+      					  <%= image_tag("newstate.jpg") %>
+    					</div>
+  				</div>
+				<hr/>
+  				<div class="explanation_content_container">
+    					<h2>Data filtering</h2>
+    					<p>
+					The data can be filtered in many ways. Each choice chosen filters the data so the data displayed is more specific.
+					<br/>
+					Below we can see how selecting age of 65-75 year olds changes the data seen from the original blank filters. The age range can be 
+					concatenated in ways so that the user could choose 65-75+.
+					</p>
+    					<div class="image_container">
+                          <%= image_tag("age.jpg") %>
+    					</div>
+					<p>
+					The data can be filtered through gender.
+					<br/>
+					The image below shows how a user could split the data into male/female in order to see if there are any amazing trends that 
+					simply numbers could not show.
+					</p>
+    					<div class="image_container">
+      						<%= image_tag("gender.jpg") %>
+    					</div>
+					<p>
+					The data can also be filtered through:
+					</p>
+					<br/>
+					<br/>
+					<p>
+					Vehicle Information...
+					</p>
+					<div class="image_container">
+      						<%= image_tag("vehicle.jpg") %>
+    					</div>
+					<br/>
+					<br/>
+					<p>
+					Weather Conditions...
+					</p>
+					<div class="image_container">
+      					<%= image_tag("weather.jpg") %>
+    					</div>
+					<br/>
+					<br/>
+					<p>
+					and Intoxicants.
+					</p>
+					<div class="image_container">
+      						<%= image_tag("intoxicants.jpg") %>
+    					</div>
+  				</div>
+				<hr/>
+				<div class="explanation_content_container">
+    					<h2>Time Traveling</h2>
+    					<p>
+					A very cool feature of our project is the option of seeing data in different time categories.
+					</p>
+					<br/>
+					<br/>
+					<p>
+					The data can be seen over the course of many years which is the default. If no other time variables are selected, a year range from 
+					2001 to 2010 will be given.
+					</p>
+					<br/>
+					<p>
+					A user can adjust the time in a category if they drag the ends of the time slider in any direction.  Below is an image showing how 
+					trends can be pinpointed through the time slider.
+					</p>
+    					<div class="image_container">
+      						<%= image_tag("scrollingtime.jpg") %>
+    					</div>
+					<br/>
+					<br/>
+					<p>The categories of time viewing include:</p>
+					<br/>
+					<br/>
+					<b>Months in a Year</b>
+    					<div class="image_container">
+      						<%= image_tag("timemonthyear.jpg") %>
+    					</div>
+					<br/>
+					<br/>
+					<b>Days in a Week</b>
+    					<div class="image_container">
+      						<%= image_tag("timeweekday.jpg") %>
+    					</div>
+				</div>
+				<hr/>
+				<div class="explanation_content_container">
+    					<h2>Heat Map</h2>
+					<p>
+					There is so much data! A good way to show a lot of data without numbers is a heat map. The heat map for this program allows the 
+					user to see how each state compares with each other.
+					<br/>
+					On the left, the states are color coded relative to their intensities.
+					<br/>
+					On the right, the states are listed in decending order still maintaining the color of their state on the left. This box on the right 
+					is "flickable" and allows the user to see how each state compares in order.  The top and bottom scores remain constant so that 
+					the user is always reminded how each state lies within the data.
+					</p>
+    					<div class="image_container">
+      						<%= image_tag("heatmap.jpg") %>
+    					</div>
+					<br/>
+					<br/>
+					<p>Here is an action shot showing some prime flickage</p>
+					<div class="image_container">
+      						<%= image_tag("scrollingstate.jpg") %>
+    					</div>
+					<br/>
+					<br/>
+					<p>
+					Clicking on the "Pick" buttons next to each state selects the state on the map, also allowing it to be the selected state.
+					</p>
+					<div class="image_container">
+      						<%= image_tag("pickstate.jpg") %>
+    					</div>
+					<br/>
+					<br/>
+					<p>
+					Clicking on "View State" will toggle you between the plot and heat maps.
+					</p>
+				</div>
+				<hr/>
+				<div class="explanation_content_container">
+    					<h2>Plot Map</h2>
+					<p>
+					Ah my eyes! So much data!! At this point the user is shown all the data as points on a map. The user can see exactly where 
+					each accident occured.
+					</p>
+    					<div class="image_container">
+      						<%= image_tag("plotview.jpg") %>
+    					</div>
+					<br/>
+					<br/>
+					<p>Try moving around the time and see how the data appears and disappears!</p>
+					<div class="image_container">
+      					<%= image_tag("plotviewtime.jpg") %>
+    					</div>
+					<br/>
+					<br/>
+					<p>
+					All these points can only be so useful.  Our project kicks it up a knotch by allowing the user to select specific crash sites. If 
+					a user clicks on the map, it grabs all the possible points in that area that they pressed. These points are then thrown into a list 
+					on the right side of the screen. The user is now able to see lat/long and the time of the accident.
+					</p>
+					<div class="image_container">
+      						<%= image_tag("plotviewclick.jpg") %>
+    					</div>
+					<br/>
+					<br/>
+					<p>
+					All the information on each accident is in the program. Click on "More" to see more information on each accident.
+					</p>
+					<div class="image_container">
+      					<%= image_tag("plotviewspecific.jpg") %>
+    					</div>
+				</div>
+				<hr/>
+			</div>
