@@ -61,5 +61,8 @@ class Cs424Controller < ApplicationController
 
   def project3_roles
   end
+  
+  def project3_questions
+  end
 
 end
