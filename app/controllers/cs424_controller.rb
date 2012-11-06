@@ -65,4 +65,29 @@ class Cs424Controller < ApplicationController
   def project3_questions
   end
 
+  def project4
+  end
+  
+  def project4_status
+  end
+  
+  def project4_howto
+  end
+  
+  def project4_data
+  end
+  
+  def project4_source
+  end
+  
+  def project4_conclusions
+  end
+
+  def project4_roles
+  end
+  
+  def project4_questions
+  end
+
+  
 end

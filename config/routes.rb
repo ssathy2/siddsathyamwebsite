@@ -29,6 +29,10 @@ SampleApp::Application.routes.draw do
   match '/projects/cs424/project3/roles', to: "cs424#project3_roles"
   match '/projects/cs424/project3/questions', to: "cs424#project3_questions"
   
+  match '/projects/cs424/project4', to: "cs424#project4"
+  match '/projects/cs424/project4/status', to: "cs424#project4_status"
+
+  
   #match '/signin', to:"static_pages#sign-in"
   #match '/email-me', to:"static_pages#email-me"
 
