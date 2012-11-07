@@ -2,32 +2,34 @@
   <h1> Questions and Answers </h1>
     <div>
         <h3> Group 1 </h3>
-        <p>Q: When dealing with many crashes, don't you think this waving only the markers and no aggregation confuses the user with too much information?</p>
-        <p>A: </p>
+        <p>Q: When dealing with many crashes, don't you think that having only the markers and no aggregation confuses the user with too much information?</p>
+        <p>A: One of our concerns when planning our program was trying to make sure that it would run smoothly on the wall. If we could only show one graph at a a time, then performance would increase. Also, with the  idea of "Details on demand" it was important that we didn't overload the user with too much information. </p>
         <h3> Group 2 </h3>
         <p>Q: Don't you think that having both the map and the graph in the same visualization could be better for comparison purposes? </p>
         <p>A: </p>
         <h3> Group 4 </h3>
         <p>Q: How can we compare data for different states? </p>
-        <p>A: </p>
+        <p>A: The filters that are currently active are applied to the heat map, so when a user uses the state scroll bar in the heat map section they can see the numbers of that state in comparison to other states. In addition numerical comparisons, a user can see the contrast in colors of that state in comparison to every other state in the US. </p>
         <h3> Group 5 </h3>
         <p>Q: How did you make the gradient map (heatmap)?</p>
         <p>A: </p>
         <h3> Group 6 </h3>
         <p>Q: Any specific reason of starting with the graph instead of the map? </p>
-        <p>A: </p>
+        <p>A: A line graph is a fairly simple and intuitive tool for any user to use. We wanted to ensure that the user was comfortable upon start up in our program. We felt that a line graph showing all of the crashes from 2001 to 2010 in Illinois was easily readable and a great introduction for any new user that didn't know what to expect in our program.</p>
         <h3> Group 7 </h3>
         <p>Q: Why does Illinois show no accidents for 2003? Was it a bug/null value? How did you grab/modify the data, was this related to the problem? </p>
-        <p>A: </p>
+        <p>A: No, we had data for 2003 but we forgot to get the number of fatalities for that year. When we were querying the database initially, we queried based on state name, number of fatalities, and the age. In the database, the number of fatalities for that year was null and so the database was returning no results. Thus, we had a severe dip to 0 for that year.</p>
+        <p> Check our data page <%=link_to "here", {:controller => 'cs424', :action => 'project3_data'} %> for how we grabbed and modified the data. Basically, it was a human error in downloading the data that led to the gap in 2003.
+ </p>
         <h3> Group 8 </h3>
         <p>Q: Is filtering possible on the map? </p>
         <p>A: </p>
         <h3> Group 9 </h3>
         <p>Q: How can your interface be used to compare data from different states? </p>
-        <p>A: </p>
+        <p>A: The filters that are currently active are applied to the heat map, so when a user uses the state scroll bar in the heat map section they can see the numbers of that state in comparison to other states. In addition numerical comparisons, a user can see the contrast in colors of that state in comparison to every other state in the US. </p>
         <h3> Group 10 </h3>
         <p>Q: Did you have missing data for 2003? Your graph had a severe dip to 0 for that year. </p>
-        <p>A: </p>
+        <p>A: No, we had data for 2003 but we forgot to get the number of fatalities for that year. When we were querying the database initially, we queried based on state name, number of fatalities, and the age. In the database, the number of fatalities for that year was null and so the database was returning no results. Thus, we had a severe dip to 0 for that year.</p>
     </div>
   
 </div>
