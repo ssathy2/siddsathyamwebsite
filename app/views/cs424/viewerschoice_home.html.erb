@@ -1,0 +1,85 @@
+<div>
+  <h1> Viewer's Choice Presentation </h1>
+  <h2> Sidd Sathyam</h2>
+  <h2> In this visualization, the world records of different olympic sports are analyzed. The visualization takes a look at which records have stood the longest and which records get broken frequently. The visualization can be accessed by clicking <%= link_to "here.", 'http://visualization.geblogs.com/visualization/records/', :target => "_blank" %></h2>
+  <div class="exp_container">
+    <div class="question_container">
+      <h1> What is the data? </h1>  
+      <p> The data we're seeing in this application is all of the world records for a collection of olympic sports. The data can be viewed on a map by country or region, historically on a timeline, by sport, and by the duration that the records were held for. For each olympic record, the data can be further filtered by sex of the person breaking the record and if the record was broken at the olympics or if it was broken at some other sporting event.</p>
+      <h1> How was it collected? </h1>
+      <p> The data was taken from a couple of sources including <i>The New York Times</i> and the international federations for cycling, shooting, swimming, track and field and weightlifting. The data is from August 29th, 1900 and goes up until May 5th, 2012. </p>
+      
+      <h1> What does the application do well? </h1>
+      <div>
+        <b>Geographical visualization of the records</b>
+        <ul>        
+          <li> The colors used make it easy and quick to see which countries have a lot of world records and which ones don't. </li>
+          <li> Ability to playback the numbers of world records over the years allows user to see the change in the amounts of records over time for each country.</li>
+          <li> By clicking on the individual country, the user can see the break down of the world records by sport with stacked circles with the colors of the circles representing the sport. By hovering over one of the dots in the circles, the user can get data for that particular record that was broken. </li>
+        </ul>  
+      </div>
+      <div>
+        <b>'+' icons throughout application</b>
+        <ul>
+          <li> Gives context to the data user is currently looking at.</li>
+          <li> Allows user to easily confirm any trends or identify any new ones by knowing the trend first and then being able to see the trend in the current visualization that's being shown.</li>
+        </ul>
+      </div>  
+      <div>
+        <b>Sport breakdown of records</b>
+        <ul>
+          <li> Color coding of sports and events in each sport is clear and easy to read. </li>
+          <li> By clicking on a sport "bubble", he or she can filter the data even more by looking at records for a particular event in that sport. </li>
+          <li> Clicking on a sport "bubble" gives a sort of a timeline for each event in the sport and on that time line is how long each record in the event stood. </li>
+        </ul>
+      </div>
+      <h1> What needs improvement? </h1>
+      <div>
+        <b>Records sorted by duration</b>
+        <ul>
+          <li> Lines are too thin and hard to read. </li>
+          <li> Some events have two lines, some have only one. I realize that a line represents the number of years a record stood but what does it mean if for an event and for a set of years, there's no line?</li>
+        </ul>  
+      </div>
+      <div>
+        <b>Historical timeline of records</b>
+        <ul>
+          <li> When I click on a dot for a particular year, I see a line that starts from 1900 and goes through to 2012. The line has ups and downs. What do these ups and downs mean? The makers should find some better way of showing this line. </li>
+          <li> Dots need to be made a little bit bigger. Even on a desktop, they're too small to see and so it's tough to hover over a dot to see which event it is. </li>
+        </ul>
+      </div>
+      <div>
+        <h1> How can questions people ask be answered by this tool? </h1>
+        <p> I think the first thing that someone would want to see is how many records his or her country has compared to the rest of the world. Since this visualization is related to the olympics, I think that this is a very reasonable thing to investigate. With this tool, one can see the records sorted geographically and then look at the number of records for the country that he or she wants to take a look at and compare against other countries. By clicking on the country in that view, the user can see what particular records the country held or is holding depending on the year that the user is taking a look at the data for. Digging further into the country data, a user may want to look at which countries have the most amount of records in what sports. This can be answered by looking at the records on the world map. Unsurprisingly, the United States has the most amount of swimming and track and field records. </p>
+        <p> Another type of question that someone would want to answer would be related to the records by sport. With this tool, a user can see in which event the records change often or how long records are held in events in a sport. The most common question could be how long was the longest duration for which an record was held for? To answer this, the user would go to the records sorted by duration and he or she would see that the women's road marathon record and the women's 400 meter dash event were two of the longest-standing records. </p>
+        <p> The user would perhaps want to look at records by gender. Are there sports in which women break records more often than men? Are there any particular countries in which more records were broken by women than by men? The first question can be answered by using the historical timeline of events and then sorting the data by gender and then doing a comparison on all the sports. The second question can be answered by using the map to view the records, the map can then be further filtered by gender. In South Korea, women held five world records whereas men only held one record. </p>
+      </div>
+    </div>    
+  </div> 
+  <!--<div class="exp_container">
+      <h2 id="projectlinks_header"> Project Links</h2>
+      <ul>
+        <li>
+          <%=link_to "Status", {:controller => 'cs424', :action => 'project3_status' }%>   
+        </li>
+        <li>
+          <%=link_to "Application Walkthrough", {:controller => 'cs424', :action => 'project3_howto'} %>
+        </li>
+        <li>
+          <%=link_to "Data overview", {:controller => 'cs424', :action => 'project3_data'} %>
+        </li>
+        <li>
+          <%=link_to "Link to source code", {:controller => 'cs424', :action => 'project3_source'} %>
+        </li>
+        <li>
+          <%=link_to "Team Member Roles", {:controller => 'cs424', :action => 'project3_roles'} %>
+        </li>
+        <li>
+          <%=link_to "Conclusions", {:controller => 'cs424', :action => 'project3_conclusions'} %>
+        </li>
+        <li>
+          <%=link_to "Questions asked by other groups", {:controller => 'cs424', :action => 'project3_questions'} %>
+        </li>
+      </ul>
+  </div>-->
+</div>

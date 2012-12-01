@@ -88,6 +88,8 @@ class Cs424Controller < ApplicationController
   
   def project4_questions
   end
-
+  
+  def viewerschoice_home
+  end
   
 end

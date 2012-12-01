@@ -31,6 +31,10 @@ SampleApp::Application.routes.draw do
   
   match '/projects/cs424/project4', to: "cs424#project4"
   match '/projects/cs424/project4/status', to: "cs424#project4_status"
+  match '/projects/cs424/viewerschoice', to: "cs424#viewerschoice_home"
+  
+  
+  match '/projects/cs424/youtubeinfinitescroll', to: "sideprojects#youtubeinfscroll"
 
   
   #match '/signin', to:"static_pages#sign-in"
