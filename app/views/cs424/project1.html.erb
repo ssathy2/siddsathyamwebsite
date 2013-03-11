@@ -1,6 +1,6 @@
 <div>
   <h1> Project 1: Electric Avenue </h1>
-  <h2> Welcome to project 1! In this project we are interested in looking at energy production and consumption data for the entire world </h2>
+  <h2> In this project we are interested in looking at energy production and consumption data for the entire world </h2>
   <div class="movie_container">
     <h2> Video Walkthrough of Application </h2>
     <div class="youtube_video">
@@ -11,16 +11,16 @@
       <h2 id="projectlinks_header"> Project Links</h2>
       <ul>
         <li>
-          <%=link_to "How to use the application", projects_cs424_project1_howto_path%>   
+          <%=link_to "How to use the application", {:controller => 'cs424', :action => 'project1_howto' }%>   
         </li>
         <li>
-          <%=link_to "Where the data comes from", projects_cs424_project1_data_path%>   
+          <%=link_to "Where the data comes from", {:controller => 'cs424', :action => 'project1_data' }%>
         </li>
         <li>
-          <%=link_to "Link to source and how to run the application", projects_cs424_project1_source_path%>   
+          <%=link_to "Link to source and how to run the application", {:controller => 'cs424', :action => 'project1_source' }%>
         </li>
         <li>
-          <%=link_to "Conclusions", projects_cs424_project1_conclusions_path%>
+          <%=link_to "Conclusions", {:controller => 'cs424', :action => 'project1_conclusions' }%>
         </li>
       </ul>
   </div>
